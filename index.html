@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"></html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Future Dots</title>
         <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
         <style>
@@ -27,6 +29,10 @@
 
             .content-wrapper {
                 flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
             }
     
             header {
@@ -34,6 +40,32 @@
                 padding: 25px;
                 font-family: 'Nothing You Could Do', cursive;
             }
+
+            .clickable-box {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 20px;
+                background-color: #f0f0f0;
+                border-radius: 15px;
+                cursor: pointer;
+                margin-bottom: 20px; /* Space between multiple boxes */
+            }
+
+
+            .clickable-box img {
+                width: 50px; /* Adjust based on your logo's size */
+                height: auto;
+                margin-bottom: 10px; /* Space between logo and subtitle */
+            }
+
+            .box-content {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                flex-grow: 1;
+            }
+
     
             footer {
                 text-align: center;
@@ -47,6 +79,13 @@
             <header>
                 <h1>Future Dots</h1>
             </header>
+            <div class="clickable-box" onclick="location.href='https://savewise.xyz';">
+                <div class="box-content">
+                    <img src="your-logo-url-here" alt="Logo">
+                    <p>Money. Like a genius.</p>
+                </div>
+                <span>➔</span>
+            </div>
         </div>
         <footer>
             <p>&copy; 2024 Future Dots, LLC</p>
