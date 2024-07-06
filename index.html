@@ -47,7 +47,7 @@
                 align-items: center;
                 padding: 20px;
                 background-color: #f0f0f0;
-                border-radius: 15px;
+                border-radius: 8px;
                 cursor: pointer;
                 margin-bottom: 20px; /* Space between multiple boxes */
             }
@@ -57,16 +57,23 @@
             }
 
             .clickable-box img {
-                width: 100px;
+                width: 50px;
                 height: auto;
-                margin-bottom: 10px; /* Space between logo and subtitle */
+                border-radius: 5px;
             }
 
             .box-content {
                 display: flex;
-                flex-direction: column;
-                align-items: left;
+                flex-direction: row;
+                align-items: center;
                 flex-grow: 1;
+            }
+
+            .box-content a {
+                padding-left: 10px;
+                font-size: 2.25rem;
+                font-weight: 600;
+                color: black;
             }
 
             footer {
@@ -83,10 +90,9 @@
             </header>
             <div class="clickable-box" onclick="location.href='https://getsavewise.com';"">
                 <div class="box-content">
-                    <img src="logo.svg" alt="Savewise Cashback">
-                    <p>Savewise Cashback Comparison</p>
+                    <img src="square_logo.png" alt="savewise" />
+                    <a href="https://getsavewise.com?utm_source=futuredots">savewise</a>
                 </div>
-                <span><a href="https://getsavewise.com">➔</a></span>
             </div>
         </div>
         <footer>
